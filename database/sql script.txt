@@ -1,0 +1,35 @@
+CREATE TABLE departments (
+	department_id int AUTO_INCREMENT ,
+    department_name VARCHAR(255),
+    Primary key(department_id)
+);
+
+CREATE TABLE employee (
+	employee_id int AUTO_INCREMENT,
+    first_name VARCHAR(255),
+	last_name VARCHAR(255),
+	department_id int,
+    Primary key(employee_id),
+    Foreign key (department_id) references departments(department_id)
+);
+
+INSERT INTO departments (
+ department_name
+) VALUES
+('Information Technology'),
+('Human Resource'),
+('Finance'),
+('Accounting') ;
+
+INSERT INTO employee (
+ first_name,last_name,department_id
+) VALUES
+('Amelia','Margaret',	2),
+('Olivia' ,'Samantha',2),
+('Bethany', 'Sophia',3),
+('Emily','Elizabeth',3),
+('Jessica','Lauren',4),
+('Smith','Murphy',1),
+('Thomas','O\'Connor',1),
+('Lam','Williams',4);
+
