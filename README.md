@@ -59,7 +59,7 @@ Run migrations to create the database tables:
 php artisan migrate
 ```
 
-Execute SQl Using script in `database/sql script.txt`
+Execute SQL Using script in `database/sql script.txt`
 
 ### 6. Build Frontend Assets
 
